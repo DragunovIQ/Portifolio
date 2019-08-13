@@ -191,7 +191,7 @@ body {
   border: 2px solid rgba(116, 33, 250, 0.829);
 }
 
-#project1 div {
+#project1 #preview {
   width: 500px;
   height: 100%;
   background-image: url(/images/aaa.png);
@@ -213,31 +213,38 @@ body {
 }
 
 #project1 #btn1 {
-  height: 50px;
-  width: 120px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  border-radius: 2px;
   background: transparent;
   border: 1px solid rgba(116, 33, 250, 0.829);
   cursor: pointer;
-  -webkit-transform: translate(20%, -45%);
-          transform: translate(20%, -45%);
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-45%, -45%);
+          transform: translate(-45%, -45%);
+  left: 20%;
+  -webkit-box-shadow: 0px 0px 19px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 19px -5px rgba(0, 0, 0, 0.75);
 }
 
 #project1 #btn2 {
-  height: 50px;
-  width: 120px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  border-radius: 2px;
   background: transparent;
   border: 1px solid rgba(116, 33, 250, 0.829);
   cursor: pointer;
-  -webkit-transform: translate(-200%, -45%);
-          transform: translate(-200%, -45%);
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-45%, -45%);
+          transform: translate(-45%, -45%);
+  left: 70%;
+}
+
+#project1 #btnz {
+  position: relative;
+  width: 30%;
+  height: 20%;
+  top: 40%;
 }
 
 #project2 {
@@ -268,7 +275,7 @@ body {
   border: 1px solid rgba(116, 33, 250, 0.829);
 }
 
-#project2 div {
+#project2 #preview2 {
   width: 500px;
   height: 100%;
   border: 8px solid #fbfbfb;
@@ -278,31 +285,38 @@ body {
 }
 
 #project2 #btn3 {
-  height: 50px;
-  width: 120px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  border-radius: 2px;
   background: transparent;
   border: 1px solid rgba(116, 33, 250, 0.829);
   cursor: pointer;
-  -webkit-transform: translate(20%, -45%);
-          transform: translate(20%, -45%);
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-45%, -45%);
+          transform: translate(-45%, -45%);
+  left: 20%;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 #project2 #btn4 {
-  height: 50px;
-  width: 120px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  border-radius: 2px;
   background: transparent;
   border: 1px solid rgba(116, 33, 250, 0.829);
   cursor: pointer;
-  -webkit-transform: translate(-200%, -45%);
-          transform: translate(-200%, -45%);
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-45%, -45%);
+          transform: translate(-45%, -45%);
+  left: 70%;
+}
+
+#project2 #btnz2 {
+  position: relative;
+  width: 30%;
+  height: 20%;
+  top: 40%;
 }
 
 #space {
@@ -434,5 +448,78 @@ body {
 
 #s-line #s-s img {
   height: 100%;
+}
+
+@media screen and (max-width: 1540px) {
+  #project1 #btnz {
+    position: relative;
+    top: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  #project1 #btn1 {
+    position: absolute;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 50px;
+    top: 20%;
+    left: 35%;
+    -webkit-transform: none;
+            transform: none;
+  }
+  #project1 #btn2 {
+    position: absolute;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 50px;
+    top: 60%;
+    left: 35%;
+    -webkit-transform: none;
+            transform: none;
+  }
+  #project2 #btnz2 {
+    position: relative;
+    top: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  #project2 #btn3 {
+    position: absolute;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 50px;
+    top: 20%;
+    left: 35%;
+    -webkit-transform: none;
+            transform: none;
+  }
+  #project2 #btn4 {
+    position: absolute;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 50px;
+    top: 60%;
+    left: 35%;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

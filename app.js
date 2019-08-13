@@ -26,3 +26,12 @@ function light(){
     tri.style.borderRight = '#fbfbfb';
     tri.style.borderLeft = '#fbfbfb';
 }
+btn1 = document.getElementById('btn3');
+btn1.addEventListener("mouseover", mouseOver);
+btn1.addEventListener("mouseout", mouseOut);
+function mouseOver(){
+btn1.style.boxShadow = "0px 0px 12px -5px rgba(0,0,0,0.75)";
+}
+function mouseOut(){
+    btn1.style.boxShadow = "none";
+}
