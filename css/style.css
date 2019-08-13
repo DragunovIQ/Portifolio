@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: poppins;
+  background-color: #fbfbfb;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fbfbfb;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+#title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translateX(-95px);
+          transform: translateX(-95px);
+  text-align: center;
+  text-shadow: 0px 0px 4px #00000062;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translateX(-45px);
+          transform: translateX(-45px);
+  text-shadow: 0px 0px 4px #00000062;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#twitter {
+  width: 2%;
+  height: 4%;
+  top: 49%;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  left: 55%;
+}
+
+#linked {
+  width: 2%;
+  height: 4%;
+  top: 49%;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  left: 51%;
+}
+
+#fb {
+  width: 2%;
+  height: 4%;
+  top: 49%;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  left: 47%;
+}
+
+#out {
+  width: 2%;
+  height: 4%;
+  top: 49%;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  left: 43%;
+}
+
+#sqr {
+  background-color: #D11E87;
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 0.75);
+  top: 60%;
+  left: 2%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+#moon {
+  width: 4%;
+  height: 10%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  cursor: pointer;
+}
+
+#triangle {
+  background-color: blue;
+  width: 0px;
+  height: 0px;
+  border-bottom: 135px #366fff solid;
+  border-left: 85px #000000 solid;
+  border-right: 85px #000000 solid;
+  border-top: 75px #fbfbfb solid;
+  position: absolute;
+  left: 0;
+  top: -12%;
+}
+
+#square2 {
+  background-color: rgba(116, 33, 250, 0.829);
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 60%;
+  top: -1%;
+  -webkit-transform: rotate(-18deg);
+          transform: rotate(-18deg);
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 0.75);
+}
+
+.shadow {
+  width: 900px;
+}
+
+#circle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: rgba(255, 251, 1, 0.514);
+  left: 90%;
+  top: 60%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 27px -6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+#myp h3 {
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid rgba(116, 33, 250, 0.829);
+  line-height: 0.1em;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#myp h3 span {
+  background: #fbfbfb;
+  padding: 0 40px;
+}
+
+#project1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fbfbfb;
+  width: 90%;
+  margin: auto;
+  margin-top: 70px;
+  height: 280px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  border: 2px solid rgba(116, 33, 250, 0.829);
+}
+
+#project1 div {
+  width: 500px;
+  height: 100%;
+  background-image: url(/images/aaa.png);
+  background-size: cover;
+  border: 8px solid #fbfbfb;
+  border-radius: 11px;
+}
+
+#project1 p {
+  width: 400px;
+  display: inline-block;
+  padding: 40px;
+  background: white;
+  height: 200px;
+  margin-top: 40px;
+  margin-left: 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(116, 33, 250, 0.829);
+}
+
+#project1 #btn1 {
+  height: 50px;
+  width: 120px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 2px;
+  background: transparent;
+  border: 1px solid rgba(116, 33, 250, 0.829);
+  cursor: pointer;
+  -webkit-transform: translate(20%, -45%);
+          transform: translate(20%, -45%);
+}
+
+#project1 #btn2 {
+  height: 50px;
+  width: 120px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 2px;
+  background: transparent;
+  border: 1px solid rgba(116, 33, 250, 0.829);
+  cursor: pointer;
+  -webkit-transform: translate(-200%, -45%);
+          transform: translate(-200%, -45%);
+}
+
+#project2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fbfbfb;
+  width: 90%;
+  margin: auto;
+  margin-top: 70px;
+  height: 280px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  border: 2px solid rgba(116, 33, 250, 0.829);
+  margin-top: 10vh;
+}
+
+#project2 p {
+  width: 400px;
+  height: 200px;
+  padding: 40px;
+  background: white;
+  margin-top: 40px;
+  margin-right: 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(116, 33, 250, 0.829);
+}
+
+#project2 div {
+  width: 500px;
+  height: 100%;
+  border: 8px solid #fbfbfb;
+  border-radius: 11px;
+  background-image: url(/images/2560x1440.jpg);
+  background-size: cover;
+}
+
+#project2 #btn3 {
+  height: 50px;
+  width: 120px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 2px;
+  background: transparent;
+  border: 1px solid rgba(116, 33, 250, 0.829);
+  cursor: pointer;
+  -webkit-transform: translate(20%, -45%);
+          transform: translate(20%, -45%);
+}
+
+#project2 #btn4 {
+  height: 50px;
+  width: 120px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 2px;
+  background: transparent;
+  border: 1px solid rgba(116, 33, 250, 0.829);
+  cursor: pointer;
+  -webkit-transform: translate(-200%, -45%);
+          transform: translate(-200%, -45%);
+}
+
+#space {
+  margin-top: 10vh;
+}
+
+#exp h3 {
+  text-align: center;
+  border-bottom: 1px solid rgba(116, 33, 250, 0.829);
+  line-height: .1em;
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+}
+
+#exp h3 span {
+  background: #fbfbfb;
+  padding: 0 40px;
+}
+
+#f-line {
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#f-line #f-f {
+  width: 400px;
+  height: 100%;
+  border: 1px solid rgba(116, 33, 250, 0.829);
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#f-line #f-f h3 {
+  padding: 40px;
+  margin-right: 70px;
+}
+
+#f-line #f-f img {
+  height: 100%;
+}
+
+#f-line #f-s {
+  width: 400px;
+  height: 100%;
+  background: transparent;
+  border: 1px solid rgba(116, 33, 250, 0.829);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#f-line #f-s h3 {
+  padding: 40px;
+  margin-right: 90px;
+}
+
+#f-line #f-s img {
+  height: 100%;
+}
+
+#s-line {
+  margin-top: 80px;
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#s-line #s-f {
+  width: 400px;
+  height: 100%;
+  background: transparent;
+  border: 1px solid rgba(116, 33, 250, 0.829);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#s-line #s-f h3 {
+  padding: 40px;
+  margin-right: 110px;
+}
+
+#s-line #s-f img {
+  height: 100%;
+}
+
+#s-line #s-s {
+  width: 400px;
+  height: 100%;
+  background: transparent;
+  border: 1px solid rgba(116, 33, 250, 0.829);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#s-line #s-s h3 {
+  padding: 40px;
+  margin-right: 100px;
+}
+
+#s-line #s-s img {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
