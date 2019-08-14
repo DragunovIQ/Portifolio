@@ -555,10 +555,4 @@ body {
             transform: none;
   }
 }
-
-@media screen and (max-width: 720px) {
-  body {
-    display: none;
-  }
-}
 /*# sourceMappingURL=style.css.map */
