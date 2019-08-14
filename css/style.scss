@@ -8,6 +8,7 @@ body{
   font-family: poppins;
   background-color: #fbfbfb;
   transition: 0.5s ease;
+  overflow-x: hidden;
 }
 #intro{
   display: flex;
@@ -429,5 +430,10 @@ $purple-color: rgba(116, 33, 250, 0.829);
       left: 35%;
       transform: none;
     }
+  }
+}
+@media screen and (max-width: 720px){
+  body{
+    display: none;
   }
 }

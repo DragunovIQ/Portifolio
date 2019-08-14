@@ -10,6 +10,7 @@ body {
   background-color: #fbfbfb;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  overflow-x: hidden;
 }
 
 #intro {
@@ -552,6 +553,12 @@ body {
     left: 35%;
     -webkit-transform: none;
             transform: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
