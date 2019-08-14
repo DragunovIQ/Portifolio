@@ -28,8 +28,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 50%;
+  position: relative;
+  left: 48%;
   top: 40%;
   -webkit-transform: translateX(-95px);
           transform: translateX(-95px);
@@ -37,6 +37,28 @@ body {
   text-shadow: 0px 0px 4px #00000062;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+}
+
+@-webkit-keyframes blink {
+  from {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  to {
+    -webkit-transform: rotate(660deg);
+            transform: rotate(660deg);
+  }
+}
+
+@keyframes blink {
+  from {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  to {
+    -webkit-transform: rotate(660deg);
+            transform: rotate(660deg);
+  }
 }
 
 #contact {
@@ -94,7 +116,7 @@ body {
 }
 
 #sqr {
-  background-color: #D11E87;
+  background-color: #d11e87;
   display: block;
   position: absolute;
   width: 200px;
@@ -106,14 +128,18 @@ body {
   left: 2%;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
+  -webkit-animation: blink 40s ease-in-out infinite;
+          animation: blink 40s ease-in-out infinite;
+  -webkit-box-shadow: 0px 0px 32px -9px #d11e87;
+          box-shadow: 0px 0px 32px -9px #d11e87;
 }
 
 #moon {
-  width: 4%;
-  height: 10%;
+  width: 80px;
+  height: 100px;
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 26%;
+  left: 13%;
   cursor: pointer;
 }
 
@@ -126,6 +152,8 @@ body {
   border-right: 85px #fbfbfb solid;
   border-top: 75px #fbfbfb solid;
   position: absolute;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   left: 0;
   top: -12%;
 }
@@ -223,8 +251,8 @@ body {
   -webkit-transform: translate(-45%, -45%);
           transform: translate(-45%, -45%);
   left: 20%;
-  -webkit-box-shadow: 0px 0px 19px -5px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 19px -5px rgba(0, 0, 0, 0.75);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 #project1 #btn2 {
@@ -238,6 +266,8 @@ body {
   -webkit-transform: translate(-45%, -45%);
           transform: translate(-45%, -45%);
   left: 70%;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 #project1 #btnz {
@@ -310,6 +340,8 @@ body {
   -webkit-transform: translate(-45%, -45%);
           transform: translate(-45%, -45%);
   left: 70%;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 #project2 #btnz2 {

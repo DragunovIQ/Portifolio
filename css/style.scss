@@ -19,13 +19,22 @@ body{
 }
 #title{
   display: flex;
-  position: absolute;
-  left: 50%;
+  position: relative;
+  left: 48%;
   top: 40%;
   transform: translateX(-95px);
   text-align: center;
   text-shadow: $text-shadow;
   transition: 0.5s ease;
+}
+
+@keyframes blink{
+from{
+  transform: rotate(30deg);
+}
+to{
+  transform: rotate(660deg);
+}
 }
 #contact{
   display: flex;
@@ -63,7 +72,7 @@ body{
   left: 43%;
 }
 #sqr{
-  background-color: #D11E87;
+  background-color: #d11e87;
   display: block;
   position: absolute;
   width: 200px;
@@ -73,14 +82,16 @@ body{
   top: 60%;
   left: 2%;
   transform: rotate(30deg);
+  animation: blink 40s ease-in-out infinite;
+  box-shadow: 0px 0px 32px -9px rgba(209,30,135,1);
 }
 
 #moon{
-  width: 4%;
-  height: 10%;
+  width: 80px;
+  height: 100px;
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 26%;
+  left: 13%;
   cursor: pointer;
 }
 #triangle{
@@ -92,6 +103,7 @@ body{
   border-right: 85px #fbfbfb solid;
   border-top: 75px #fbfbfb solid;
   position: absolute;
+  transition: .5s ease;
   left: 0;
   top: -12%;
 }
@@ -179,8 +191,7 @@ $purple-color: rgba(116, 33, 250, 0.829);
     top: 50%;
     transform: translate(-45%, -45%);
     left: 20%;
-    
-      box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.75);
+    transition: .2s ease-in-out;
 
     
   }
@@ -192,7 +203,8 @@ $purple-color: rgba(116, 33, 250, 0.829);
     top: 50%;
     transform: translate(-45%, -45%);
     left: 70%;
-    
+    transition: .2s ease-in-out;
+ 
   }
  
   #btnz{
@@ -253,6 +265,7 @@ $purple-color: rgba(116, 33, 250, 0.829);
     top: 50%;
     transform: translate(-45%, -45%);
     left: 70%;
+    transition: .2s ease-in-out;
   }
   #btnz2{
     position: relative;
