@@ -448,6 +448,7 @@ $purple-color: rgba(116, 33, 250, 0.829);
   }
   #moon{
     width: 60px;
+    top: 16%;
   }
   #circle{
     left: 60%;
@@ -552,9 +553,11 @@ $purple-color: rgba(116, 33, 250, 0.829);
     }
   }
   #title{
-    text-align: center;
+    left: 44%;
+    top: 38%;
   }
   #contact{
+    top: 44%;
     left: 53%;
   }
   #twitter{
