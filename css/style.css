@@ -311,8 +311,9 @@ body {
   height: 100%;
   border: 8px solid #fbfbfb;
   border-radius: 11px;
-  background-image: url(/images/2560x1440.jpg);
-  background-size: cover;
+  background-image: url(/Z-Portfolio/images/Screenshot11.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #project2 #btn3 {
@@ -553,6 +554,153 @@ body {
     left: 35%;
     -webkit-transform: none;
             transform: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+  #project1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 600px;
+  }
+  #project1 #preview {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #project1 p {
+    padding: 10px;
+    width: 100%;
+    margin-left: 0;
+    padding: 20px 5px 20px 5px;
+    margin-top: 15px;
+    border-radius: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    -webkit-box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.25);
+  }
+  #project1 #btnz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+  }
+  #project2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 600px;
+  }
+  #project2 #preview2 {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #project2 p {
+    padding: 10px;
+    width: 100%;
+    margin-left: 0;
+    padding: 20px 5px 35px 5px;
+    margin-top: 15px;
+    border-radius: 1px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    -webkit-box-shadow: 0px -5px 8px -5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px -5px 8px -5px rgba(0, 0, 0, 0.25);
+  }
+  #project2 #btnz2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+  }
+  #f-line {
+    width: 100%;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 40vh;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #f-line #f-f {
+    width: 100%;
+    height: 30%;
+  }
+  #f-line #f-s {
+    width: 100%;
+    height: 30%;
+  }
+  #s-line {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%;
+    height: 40vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #s-line #s-f {
+    width: 100%;
+    height: 30%;
+  }
+  #s-line #s-s {
+    width: 100%;
+    height: 30%;
+  }
+  #title {
+    text-align: center;
+  }
+  #contact {
+    left: 53%;
+  }
+  #twitter {
+    width: 6%;
+    left: 65%;
+  }
+  #linked {
+    width: 6%;
+    left: 55%;
+  }
+  #fb {
+    width: 6%;
+    left: 45%;
+  }
+  #out {
+    width: 6%;
+    left: 35%;
   }
 }
 /*# sourceMappingURL=style.css.map */
