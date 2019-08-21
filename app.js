@@ -1,32 +1,42 @@
-var intro = document.getElementById('intro');
-var title = document.getElementById('title');
-var contact = document.getElementById('contact');
-var body = document.getElementById('body');
-var span = document.getElementById('span');
 var tri = document.getElementById('triangle');
+var blck = document.getElementsByClassName('blck');
+var txt = document.getElementsByClassName('txt');
 // --------------- Day and night mode -------------
-function night(){
-    intro.style.background = 'black';
-    body.style.background = 'black';
-    title.style.color = '#fbfbfb';
-    contact.style.color = '#fbfbfb';
-    span.style.background = 'black';
-    span.style.color = '#fbfbfb';
-    span.style.transition = '0.5s ease';
+function nighty(){
+    // Backgrounds
+    for(let x = 0; x < blck.length; x++){
+        blck[x].style.background = 'black';
+        blck[x].style.transition = '0.5s ease';
+    }
     tri.style.borderRight = '85px black solid';
     tri.style.borderLeft = '85px black solid';
+    circle.style.boxShadow = '0px 0px 54px 0px rgba(247,255,0,1)';
+    square2.style.boxShadow = '0px 0px 94px 0px rgba(131,28,227,1)';
+    shadow1.style.textShadow = '0px 0px 15px #fbfbfb';
+    shadow1.style.color = 'white';
+    shadow2.style.textShadow = '0px 0px 15px #fbfbfb';
+    shadow2.style.color = 'white';
+    // texts
+    for(let y = 0; y < txt.length; y++){
+        txt[y].style.color = '#fbfbfb';
+    }
 }
-function light(){
-    intro.style.background = '#fbfbfb';
-    title.style.color = 'black';
-    contact.style.color = 'black';
-    body.style.background = '#fbfbfb';
-    span.style.background = '#fbfbfb';
-    span.style.transition = '0.5s ease';
-    span.style.color = 'black';
+//Night mode
+function lighty(){
+    for(let x = 0; x < blck.length; x++){
+        blck[x].style.background = '#fbfbfb';
+    }
     tri.style.borderRight = '85px #fbfbfb solid';
     tri.style.borderLeft = '85px #fbfbfb solid';
+    circle.style.boxShadow = '0px 0px 25px -6px rgba(0,0,0,0.25)';
+    square2.style.boxShadow = '0px 0px 27px -6px rgba(0,0,0,0.75)';
+    shadow1.style.color = 'black';
+    shadow2.style.color = 'black';
+    for(let y = 0; y < txt.length; y++){
+        txt[y].style.color = 'black';
+    }
 }
+
 //----------    buttons shadow -------------
 btn1 = document.getElementById('btn1');
 btn2 = document.getElementById('btn2');
