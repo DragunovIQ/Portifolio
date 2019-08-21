@@ -164,7 +164,7 @@ body {
 }
 
 #square2 {
-  background-color: rgba(116, 33, 250, 0.829);
+  background-color: #7421fad3;
   width: 130px;
   height: 130px;
   position: absolute;
@@ -239,7 +239,7 @@ body {
   width: 400px;
   display: inline-block;
   padding: 40px;
-  background: white;
+  background: #fbfbfb;
   height: 200px;
   margin-top: 40px;
   margin-left: 50px;
@@ -305,7 +305,7 @@ body {
   width: 400px;
   height: 200px;
   padding: 40px;
-  background: white;
+  background: #fbfbfb;
   margin-top: 40px;
   margin-right: 50px;
   border-radius: 10px;
