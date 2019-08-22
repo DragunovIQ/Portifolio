@@ -1,6 +1,11 @@
 var tri = document.getElementById('triangle');
 var blck = document.getElementsByClassName('blck');
 var txt = document.getElementsByClassName('txt');
+var shadow1 = document.getElementById('shadow1');
+var shadow2 = document.getElementById('shadow2');
+var square2 = document.getElementById('square2');
+var circle = document.getElementById('circle');
+
 // --------------- Day and night mode -------------
 function nighty(){
     // Backgrounds
