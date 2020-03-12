@@ -24,7 +24,7 @@ function nighty(){
     // texts
     for(let y = 0; y < txt.length; y++){
         txt[y].style.color = '#fbfbfb';
-    }
+    } 
 }
 //Night mode
 function lighty(){
